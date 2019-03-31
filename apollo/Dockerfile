@@ -1,0 +1,8 @@
+FROM node
+ENV INSTALL_PROJECT_PATH /project
+RUN mkdir -p $INSTALL_PROJECT_PATH
+WORKDIR $INSTALL_PROJECT_PATH
+ADD . .
+RUN npm install
+RUN ls
+CMD ["./startscript.sh"]

@@ -1,0 +1,31 @@
+version: "3.3"
+services:
+  mongo:
+    image: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: itopplus
+      MONGO_INITDB_ROOT_PASSWORD: tbdadmin
+    volumes:
+      - MONGO_DATA:/data/db
+    ports:
+      - 27017:27017
+  redis:
+    image: redis
+    restart: always
+    ports:
+      - 6379:6379
+  apollo:
+    build:
+      context: ./apollo
+      dockerfile: Dockerfile
+    restart: always
+    environment:
+      NODE_ENV: development
+    volumes:
+      - ./apollo:/project
+    ports:
+      - 4000:4000    
+volumes :
+  MONGO_DATA:
+    driver: local

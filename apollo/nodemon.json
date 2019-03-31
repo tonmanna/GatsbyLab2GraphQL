@@ -1,0 +1,4 @@
+{
+    "watch": ["**/*.js", "**/*.gql"],
+    "exec": "node index.js"
+}

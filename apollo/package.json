@@ -1,0 +1,19 @@
+{
+  "name": "apollo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon -L index.js",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.4.8",
+    "graphql": "^14.2.0",
+    "graphql-tools": "^4.0.4",
+    "lodash": "^4.17.11",
+    "nodemon": "^1.18.10"
+  }
+}

@@ -1,0 +1,26 @@
+{
+    "files.exclude": {
+        "**/.git": true, // this is a default value
+        "**/.DS_Store": true, // this is a default value
+        "**/node_modules": true, // this excludes all folders
+        "**/logs": true,
+        "**/public": true,
+        "**/.cache": true,
+        "**/package-lock.json": true,
+        "**/yarn.lock": true
+    },
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "eslint.enable": true,
+    "eslint.autoFixOnSave": true,
+    "eslint.alwaysShowStatus": true,
+    "prettier.eslintIntegration": true,
+    "[javascript]": {
+        "editor.formatOnSave": false,
+        "editor.formatOnPaste": false
+    },
+
+    "eslint.options": {
+        "configFile": ".eslintrc.js",
+    }
+}
