@@ -8,6 +8,10 @@ exports.createPages = async ({ actions, graphql }) => {
                     title
                     author
                 }
+                user {
+                    id
+                    name
+                }
             }
         }
     `);
@@ -17,8 +21,8 @@ exports.createPages = async ({ actions, graphql }) => {
             path: 'Page' + index++,
             component: path.resolve(`./src/component/book.js`),
             context: {
-                bookTitle: book.title,
-            },
+                bookTitle: book.title
+            }
         });
     });
 };

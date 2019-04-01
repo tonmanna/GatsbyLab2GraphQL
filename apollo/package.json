@@ -11,6 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "apollo-server": "^2.4.8",
+    "gatsby-image": "^2.0.35",
+    "gatsby-source-filesystem": "^2.0.28",
     "graphql": "^14.2.0",
     "graphql-tools": "^4.0.4",
     "lodash": "^4.17.11",
